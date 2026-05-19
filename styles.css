@@ -1249,8 +1249,8 @@ a.contact-value:hover {
   border-radius: var(--radius-xl);
   color: #fff;
   background:
-    radial-gradient(circle at 15% 20%, rgba(230, 120, 23, 0.65), transparent 34%),
-    linear-gradient(135deg, #1C1C1C, #333333 65%, #4A2C1A);
+    radial-gradient(circle at 88% 50%, rgba(230, 120, 23, 0.28), transparent 26%),
+    linear-gradient(90deg, #2a211c 0%, #25282f 42%, #23262d 68%, #2f221a 100%);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
@@ -1260,7 +1260,7 @@ a.contact-value:hover {
   position: absolute;
   right: 1.5rem;
   bottom: -0.25rem;
-  color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.06);
   font-size: clamp(2.5rem, 8vw, 6rem);
   font-weight: 900;
   letter-spacing: -0.08em;

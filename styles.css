@@ -112,21 +112,32 @@ a {
   text-decoration: none;
 }
 
-.logo-box {
-  width: 2.65rem;
-  height: 2.65rem;
-  display: grid;
-  place-items: center;
-  border-radius: 0.9rem;
-  background: linear-gradient(135deg, var(--primary), #F0A451);
-  box-shadow: 0 12px 24px rgba(230, 120, 23, 0.25);
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.logo-box span {
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
+.scm-logo {
+  display: block;
+  width: auto;
+  height: 46px;
+  object-fit: contain;
+}
+
+.footer-scm-logo {
+  height: 54px;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 640px) {
+  .scm-logo {
+    height: 40px;
+  }
+
+  .footer-scm-logo {
+    height: 46px;
+  }
 }
 
 .logo-title {

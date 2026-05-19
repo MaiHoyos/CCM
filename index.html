@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XXV Congreso Colombiano de Matemáticas | SCM</title>
+  <meta name="description" content="XXV Congreso Colombiano de Matemáticas - 8 al 12 de junio de 2027 en Medellín, Universidad EAFIT. Organizado por la Sociedad Colombiana de Matemáticas.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        <div class="logo-box">
+          <span>SCM</span>
+        </div>
+        <div class="logo-text">
+          <p class="logo-title">Sociedad Colombiana</p>
+          <p class="logo-subtitle">de Matemáticas</p>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="https://scm.org.co" target="_blank" rel="noopener">Portal SCM</a>
+        <a href="mailto:scm@scm.org.co">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="geometric-bg">
+      <svg class="grid-pattern" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    
+    <div class="hero-content">
+      <span class="hero-badge">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3l1.5 4.5h4.5l-3.5 2.5 1.5 4.5-4-3-4 3 1.5-4.5-3.5-2.5h4.5z"/>
+        </svg>
+        Sociedad Colombiana de Matemáticas
+      </span>
+      
+      <h1 class="hero-title">
+        XXV Congreso Colombiano
+        <span class="hero-title-accent">de Matemáticas</span>
+      </h1>
+      
+      <p class="hero-description">
+        El encuentro académico más importante de la comunidad matemática colombiana.
+        Intercambio de ideas, avances en investigación y colaboración académica.
+      </p>
+      
+      <div class="hero-info">
+        <div class="info-pill">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>8 - 12 de junio, 2027</span>
+        </div>
+        <div class="info-pill">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Universidad EAFIT, Medellín</span>
+        </div>
+      </div>
+
+      <div class="countdown-section">
+        <p class="countdown-label">Faltan</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <div class="countdown-value" id="days">00</div>
+            <span class="countdown-unit">Días</span>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="hours">00</div>
+            <span class="countdown-unit">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="minutes">00</div>
+            <span class="countdown-unit">Min</span>
+          </div>
+          <div class="countdown-item">
+            <div class="countdown-value" id="seconds">00</div>
+            <span class="countdown-unit">Seg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab Navigation -->
+  <nav class="tab-nav">
+    <div class="tab-nav-container">
+      <button class="tab-btn active" data-tab="inicio">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 3l1.5 4.5h4.5l-3.5 2.5 1.5 4.5-4-3-4 3 1.5-4.5-3.5-2.5h4.5z"/>
+        </svg>
+        Inicio
+      </button>
+      <button class="tab-btn" data-tab="registro">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        Registro
+      </button>
+      <button class="tab-btn" data-tab="ponencias">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
+        Ponencias
+      </button>
+      <button class="tab-btn" data-tab="costos">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+          <line x1="1" y1="10" x2="23" y2="10"></line>
+        </svg>
+        Costos
+      </button>
+      <button class="tab-btn" data-tab="informacion">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        Información
+      </button>
+      <button class="tab-btn" data-tab="programacion">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        Programación
+      </button>
+      <button class="tab-btn" data-tab="memorias">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        Memorias
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Tab: Inicio -->
+    <div class="tab-content active" id="tab-inicio">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Información General</h2>
+        <p class="section-text">
+          El <strong>XXV Congreso Colombiano de Matemáticas</strong> reunirá a investigadores,
+          docentes, estudiantes y profesionales interesados en las distintas áreas de la matemática,
+          sus aplicaciones, su enseñanza y su divulgación. El evento contará con conferencias,
+          sesiones semiplenarias, ponencias contribuidas, pósteres, minicursos, paneles y espacios
+          de intercambio académico.
+        </p>
+        
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div>
+              <h4>Fecha</h4>
+              <p>8 al 12 de junio de 2027</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4>Sede</h4>
+              <p>Universidad EAFIT, Medellín</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Organiza</h4>
+              <p>Sociedad Colombiana de Matemáticas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card animate-in">
+        <h3 class="section-subtitle">Áreas de Interés</h3>
+        <div class="tags-container">
+          <span class="tag">Álgebra</span>
+          <span class="tag">Análisis Real</span>
+          <span class="tag">Combinatoria</span>
+          <span class="tag">Ecuaciones Diferenciales</span>
+          <span class="tag">Educación Matemática</span>
+          <span class="tag">Física Matemática</span>
+          <span class="tag">Geometría</span>
+          <span class="tag">Historia de la Matemática</span>
+          <span class="tag">Lógica</span>
+          <span class="tag">Optimización y Control</span>
+          <span class="tag">Probabilidad y Estadística</span>
+          <span class="tag">Teoría de Operadores</span>
+          <span class="tag">Análisis Numérico</span>
+          <span class="tag">Ciencias de la Computación</span>
+          <span class="tag">Topología</span>
+        </div>
+      </div>
+
+      <div class="section-card animate-in">
+        <h3 class="section-subtitle">Premios SCM</h3>
+        <div class="awards-grid">
+          <div class="award-card">
+            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <h4>Premio Nacional de Matemáticas</h4>
+            <p>Reconocimiento a personas destacadas por sus contribuciones al desarrollo de las matemáticas en Colombia.</p>
+          </div>
+          <div class="award-card">
+            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <h4>Premio José Celestino Mutis</h4>
+            <p>Reconocimiento a maestros que han contribuido de manera significativa a la educación matemática.</p>
+          </div>
+          <div class="award-card">
+            <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <h4>Premio José Fernando Escobar</h4>
+            <p>Para quienes hayan sobresalido en investigación de matemáticas puras o aplicadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Registro -->
+    <div class="tab-content" id="tab-registro">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Registro</h2>
+        <p class="section-text">
+          En esta sección se publicará la información oficial para realizar la inscripción al Congreso.
+        </p>
+        
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Estudiantes</h4>
+              <p>Pregrado y posgrado. Se podrá solicitar carné vigente.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Docentes</h4>
+              <p>Profesores de educación básica, media y superior.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Profesionales</h4>
+              <p>Miembros de la SCM y participantes externos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <p><strong>Nota:</strong> Los enlaces de registro y pago serán habilitados una vez sean anunciados oficialmente.</p>
+        </div>
+
+        <div class="buttons-row">
+          <a href="#" class="btn-primary">
+            Formulario de registro
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="btn-secondary">Consultar medios de pago</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Ponencias -->
+    <div class="tab-content" id="tab-ponencias">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Ponencias</h2>
+        <p class="section-text">
+          La convocatoria para presentación de trabajos será publicada próximamente.
+          Se invitará a la comunidad matemática a postular resultados de investigación,
+          experiencias académicas y contribuciones en las áreas de interés del Congreso.
+        </p>
+        
+        <h3 class="section-subtitle">Tipos de Contribución</h3>
+        <div class="info-grid">
+          <div class="contribution-card">
+            <h4>Semiplenarias</h4>
+            <p>Presentaciones académicas seleccionadas por el comité científico.</p>
+          </div>
+          <div class="contribution-card">
+            <h4>Ponencias Contribuidas</h4>
+            <p>Comunicaciones orales para presentar avances y resultados de investigación.</p>
+          </div>
+          <div class="contribution-card">
+            <h4>Pósteres</h4>
+            <p>Espacio para socializar trabajos en desarrollo y propuestas de investigación.</p>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle">Fechas Importantes</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Apertura de convocatoria</span>
+              <span class="timeline-date">Por confirmar</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Fecha límite de envío</span>
+              <span class="timeline-date">Por confirmar</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Notificación de aceptación</span>
+              <span class="timeline-date">Por confirmar</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-title">Publicación de programación</span>
+              <span class="timeline-date">Por confirmar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons-row">
+          <a href="#" class="btn-primary">
+            Enviar ponencia
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+          <a href="#" class="btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Descargar plantilla
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Costos -->
+    <div class="tab-content" id="tab-costos">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Costos</h2>
+        <p class="section-text">
+          Las tarifas oficiales serán publicadas próximamente.
+        </p>
+
+        <div class="table-container">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Pago Temprano</th>
+                <th>Pago Ordinario</th>
+                <th>Observaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Estudiantes</strong></td>
+                <td>Por confirmar</td>
+                <td>Por confirmar</td>
+                <td>Requiere carné o certificado vigente</td>
+              </tr>
+              <tr>
+                <td><strong>Profesores de educación básica y media</strong></td>
+                <td>Por confirmar</td>
+                <td>Por confirmar</td>
+                <td>Sujeto a verificación</td>
+              </tr>
+              <tr>
+                <td><strong>Socios efectivos SCM</strong></td>
+                <td>Por confirmar</td>
+                <td>Por confirmar</td>
+                <td>Miembros activos</td>
+              </tr>
+              <tr>
+                <td><strong>Profesionales no miembros</strong></td>
+                <td>Por confirmar</td>
+                <td>Por confirmar</td>
+                <td>Tarifa general</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Medios de Pago</h3>
+        <ul class="payment-list">
+          <li><span class="bullet"></span> Pago en línea</li>
+          <li><span class="bullet"></span> Consignación bancaria</li>
+          <li><span class="bullet"></span> Carta de compromiso institucional, si aplica</li>
+        </ul>
+
+        <div class="note-box">
+          <p><strong>Nota:</strong> Para acceder a los medios de pago, los participantes deberán realizar previamente el registro y seguir las instrucciones enviadas al correo electrónico registrado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Información -->
+    <div class="tab-content" id="tab-informacion">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Información</h2>
+        <p class="section-text">
+          Información útil para los asistentes al Congreso.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4>Turismo</h4>
+              <p>Lugares de interés, actividades culturales y sitios representativos de Medellín.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Hoteles</h4>
+              <p>Opciones de alojamiento recomendadas con enlaces de reserva.</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <div>
+              <h4>Transporte</h4>
+              <p>Información sobre llegada a la ciudad y movilidad local.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle">Contacto</h3>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <p class="contact-label">Correo electrónico</p>
+              <a href="mailto:scm@scm.org.co" class="contact-value">scm@scm.org.co</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <p class="contact-label">Teléfono</p>
+              <p class="contact-value">(+57) 601 221 6795</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Programación -->
+    <div class="tab-content" id="tab-programacion">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Programación</h2>
+        <p class="section-text">
+          La programación académica será publicada una vez finalice el proceso de recepción,
+          evaluación y organización de ponencias.
+        </p>
+
+        <div class="schedule-list">
+          <div class="schedule-item">
+            <div class="schedule-number">1</div>
+            <div>
+              <p class="schedule-day">Día 1 - Domingo 8</p>
+              <p class="schedule-activity">Registro, instalación y conferencia inaugural</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-number">2</div>
+            <div>
+              <p class="schedule-day">Día 2 - Lunes 9</p>
+              <p class="schedule-activity">Conferencias, sesiones semiplenarias y ponencias</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-number">3</div>
+            <div>
+              <p class="schedule-day">Día 3 - Martes 10</p>
+              <p class="schedule-activity">Minicursos, sesiones contribuidas y pósteres</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-number">4</div>
+            <div>
+              <p class="schedule-day">Día 4 - Miércoles 11</p>
+              <p class="schedule-activity">Paneles, actividades académicas y culturales</p>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-number">5</div>
+            <div>
+              <p class="schedule-day">Día 5 - Jueves 12</p>
+              <p class="schedule-activity">Conferencias, clausura y premiaciones</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn-primary">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Descargar programación
+        </a>
+      </div>
+    </div>
+
+    <!-- Tab: Memorias -->
+    <div class="tab-content" id="tab-memorias">
+      <div class="section-card animate-in">
+        <h2 class="section-title">Memorias</h2>
+        <p class="section-text">
+          En esta sección se publicarán las memorias oficiales del XXV Congreso Colombiano de Matemáticas.
+        </p>
+
+        <div class="memories-grid">
+          <div class="memory-card">
+            <svg class="memory-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <h4>Libro de Resúmenes</h4>
+            <p>Documento con los resúmenes de ponencias, pósteres, minicursos y demás contribuciones aceptadas.</p>
+            <a href="#" class="btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Consultar
+            </a>
+          </div>
+          <div class="memory-card">
+            <svg class="memory-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <h4>Memorias del Congreso</h4>
+            <p>Repositorio oficial con los trabajos académicos asociados al evento.</p>
+            <a href="#" class="btn-secondary">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Ver memorias
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <div class="logo-box">
+          <span>SCM</span>
+        </div>
+        <div>
+          <p class="footer-title">Sociedad Colombiana de Matemáticas</p>
+          <p class="footer-subtitle">NIT 860.047.795-1</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>&copy; 2027 Sociedad Colombiana de Matemáticas</p>
+        <p>XXV Congreso Colombiano de Matemáticas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
